@@ -9,14 +9,14 @@ import java.util.List;
  */
 
 public class FlightDepartsBeforeArrives implements Filter {
-
     @Override
     public List<Flight> filter(List<Flight> flightList) {
         System.out.println("Полёты, без сегментов с датой прилёта раньше даты вылета: ");
         List<Flight> list = new ArrayList<>();
-        flightList.forEach(flight -> flight.getSegments().stream().
-                filter(segment -> segment.getArrivalDate().isAfter(segment.getDepartureDate())).limit(1).
-                forEach(segment -> list.add(flight)));
+        flightList.forEach(flight -> flight.getSegments()
+                .stream()
+                .filter(segment -> segment.getArrivalDate().isAfter(segment.getDepartureDate())).limit(1)
+                .forEach(segment -> list.add(flight)));
         return list;
     }
 
@@ -24,7 +24,7 @@ public class FlightDepartsBeforeArrives implements Filter {
 //    public List<Flight> filter(List<Flight> flightList) {
 //        List<Flight> resultList = new ArrayList<>();
 //        System.out.println();
-//        System.out.println("Исключить дату прилёта раньше даты вылета: ");
+//        System.out.println("Полёты, без сегментов с датой прилёта раньше даты вылета: ");
 //        for (Flight flights : flightList) {
 //            for (Segment segments : flights.getSegments()) {
 //                if (segments.getArrivalDate().isAfter(segments.getDepartureDate())) {

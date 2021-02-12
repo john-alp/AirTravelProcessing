@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *  3. общее время, проведённое на земле превышает два часа (время на земле — это интервал между прилётом одного
- *     сегмента и вылетом следующего за ним)
+ * 3. общее время, проведённое на земле превышает два часа (время на земле — это интервал между прилётом одного
+ * сегмента и вылетом следующего за ним)
  */
 
 public class FlightMoreTwoHoursGroundTime implements Filter {
@@ -40,8 +40,6 @@ public class FlightMoreTwoHoursGroundTime implements Filter {
 
 
     //    LocalDateTime localDateTimeNow = LocalDateTime.now();
-
-
 //    @Override
 //    public List<Flight> filter(List<Flight> flightLists) {
 //        System.out.println();
@@ -54,7 +52,7 @@ public class FlightMoreTwoHoursGroundTime implements Filter {
 //            }
 //        }
 //
-//        //flightList.forEach(flight -> flight.getSegments().stream().filter(segment -> segment.getArrivalDate()));
+//        flightList.forEach(flight -> flight.getSegments().stream().filter(segment -> segment.getArrivalDate()));
 //   return null;
 //    }
 //

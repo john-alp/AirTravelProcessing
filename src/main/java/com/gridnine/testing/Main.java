@@ -25,7 +25,7 @@ public class Main {
     }
 
 
-        //        FlightBuilder.createFlights().forEach(System.out::println);
+    //        FlightBuilder.createFlights().forEach(System.out::println);
 //
 //        Filter departureToTime = new DepartureToTime();
 //        departureToTime.filter(FlightBuilder.createFlights()).forEach(System.out::println);
@@ -41,5 +41,5 @@ public class Main {
 //        TotalTimeSpentOnGroundMoreThanTwoHours moreThanTwoHours = new TotalTimeSpentOnGroundMoreThanTwoHours();
 //        moreThanTwoHours.filter(FlightBuilder.createFlights());
 
-    }
 }
+

@@ -10,7 +10,6 @@ import java.util.List;
 
 public class DepartureToTime implements Filter {
     @Override
-
     public List<Flight> filter(List<Flight> flightList) {
         LocalDateTime timeNow = LocalDateTime.now();
         System.out.println("1. вылет до текущего момента времени. Исключить из тестового набора перелёты. ");
